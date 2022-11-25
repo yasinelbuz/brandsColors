@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html,
+	body {
+		@apply w-full h-full;
+	}
+
+	#root {
+		@apply h-full;
+	}
+}
+
+@layer utilities {
+	.selected {
+		border: 2px solid green;
+		div {
+			span {
+				flex: 1;
+			}
+		}
+	}
+}
